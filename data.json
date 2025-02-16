@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "age": 28,
+      "isPremium": true,
+      "address": {
+        "street": "123 Maple Street",
+        "city": "Springfield",
+        "zip": "12345"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "age": 32,
+      "isPremium": false,
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Rivertown",
+        "zip": "67890"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Wireless Mouse",
+      "price": 29.99,
+      "inStock": true,
+      "categories": ["electronics", "accessories"]
+    },
+    {
+      "id": 102,
+      "name": "Mechanical Keyboard",
+      "price": 89.99,
+      "inStock": false,
+      "categories": ["electronics", "keyboards"]
+    }
+  ],
+  "orders": [
+    {
+      "orderId": 5001,
+      "userId": 1,
+      "items": [
+        { "productId": 101, "quantity": 2 },
+        { "productId": 102, "quantity": 1 }
+      ],
+      "totalPrice": 149.97,
+      "status": "shipped"
+    },
+    {
+      "orderId": 5002,
+      "userId": 2,
+      "items": [{ "productId": 101, "quantity": 1 }],
+      "totalPrice": 29.99,
+      "status": "pending"
+    }
+  ]
+}
